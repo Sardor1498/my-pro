@@ -1,10 +1,11 @@
 import React from 'react'
-import Layout from './components/Layout/Layout'
+import { SiderDemo } from './components/Layout/Layout'
+// import 'antd/dist/antd.css';
 
 const App = () => {
   return (
     <div className="App">
-     <Layout />
+      <SiderDemo />
     </div>
   );
 }
