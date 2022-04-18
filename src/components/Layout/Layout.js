@@ -29,6 +29,15 @@ export class SiderDemo extends React.Component {
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+            {
+                routes.map((item, i) => {
+                  return (
+                    <Menu.Item key={i+ item.name} icon={item.icon}>
+
+                    </Menu.Item>
+                  )
+                })
+            }
             <Menu.Item key="1" icon={<PieChartOutlined />}>
               Option 1
             </Menu.Item>
