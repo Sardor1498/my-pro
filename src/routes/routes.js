@@ -1,15 +1,6 @@
 import {
     HomeOutlined,
     ProfileOutlined,
-<<<<<<< HEAD
-    ContactOutlined,
-    TimeOutlined,
-    UserOutlined,
-} from 'antd';
-import Contact from '../pages/Contact'
-import Register from '../pages/Register'
-import Login from '../pages/Login'
-=======
     ContactsOutlined,
     UserOutlined,
     DesktopOutlined,
@@ -52,4 +43,3 @@ export const routes = [
         component: <Login />
     },
 ]
->>>>>>> 3175780a0f73fd9820caa5728845a873cd64c884
