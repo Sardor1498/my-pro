@@ -1,11 +1,12 @@
-import React from 'react'
-import { SiderDemo } from './components/Layout/Layout'
+import * as React from 'react'
+import { AntLayout } from './components/Layout/Layout'
 // import 'antd/dist/antd.css';
 
 const App = () => {
   return (
     <div className="App">
-      <SiderDemo />
+      <AntLayout />
+      {/* <DynamicForm /> */}
     </div>
   );
 }

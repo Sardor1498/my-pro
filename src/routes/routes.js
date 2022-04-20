@@ -7,38 +7,38 @@ import {
 } from '@ant-design/icons';
 import Profile from '../pages/Profile'
 import Contact from '../pages/Contact'
-import Register from '../pages/Register'
+import {Register} from '../pages/Register'
 import Login from '../pages/Login'
 
 
 export const routes = [
     {
         name: 'Home',
-        url: 'home',
+        url: '/',
         icon: <HomeOutlined />,
         component: ''
     },
     {
         name: 'Profile',
-        url: 'profile',
+        url: '/profile',
         icon: <ProfileOutlined />,
         component: <Profile />
     },
     {
         name: 'Contact',
-        url: 'contact',
+        url: '/contact',
         icon: <ContactsOutlined />,
         component: <Contact />
     },
     {
         name: 'Register',
-        url: 'register',
+        url: '/register',
         icon: <DesktopOutlined />,
         component: <Register />
     },
     {
         name: 'Login',
-        url: 'login',
+        url: '/login',
         icon: <UserOutlined />,
         component: <Login />
     },
