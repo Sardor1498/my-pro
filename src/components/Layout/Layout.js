@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Input, Layout, Menu, Breadcrumb } from 'antd';
 import {
     DesktopOutlined,
@@ -8,18 +9,21 @@ import {
     UserOutlined,
     SearchOutlined,
 } from '@ant-design/icons';
+=======
+import { Layout, Menu } from 'antd';
+>>>>>>> c671cd601496a19f8ac4cde4ea23d5ead8b0b267
 import './Layout.css'
 import BreadCrumbs from '../BreadCrumbs';
 import { routes } from '../../routes/routes';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import MenuItem from 'antd/lib/menu/MenuItem';
+import { Link, Route, Routes } from 'react-router-dom';
+
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 
 
-export class SiderDemo extends React.Component {
+export class AntLayout extends React.Component {
     state = {
         collapsed: false,
     };
@@ -34,7 +38,6 @@ export class SiderDemo extends React.Component {
         const { collapsed } = this.state;
 
         return (
-            <Router>
                 <Layout style={{ minHeight: '100vh' }}>
                     <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
                         <div className="logo" />
@@ -42,29 +45,24 @@ export class SiderDemo extends React.Component {
                             {
                                 routes.map((item, i) => {
                                     return (
-                                        <Menu.Item key={i + item} icon={item.icon}>
-                                            <Link to={item.url}>{item.name}</Link>
-                                        </Menu.Item>
+                                        <SubMenu key={i + item.name} icon={item.icon} title={item.name}>
+                                            <Menu.Item key={i} icon={item.icon}>
+                                                <Link to={item.url}>{item.name}</Link>
+                                            </Menu.Item>
+                                        </SubMenu>
                                     )
                                 })
                             }
-                            <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-                                <Menu.Item key="3">Tom</Menu.Item>
-                                <Menu.Item key="4">Bill</Menu.Item>
-                                <Menu.Item key="5">Alex</Menu.Item>
-                            </SubMenu>
-                            <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-                                <Menu.Item key="6">Team 1</Menu.Item>
-                                <Menu.Item key="8">Team 2</Menu.Item>
-                            </SubMenu>
-                            <Menu.Item key="9" icon={<FileOutlined />}>
-                                Files
-                            </Menu.Item>
                         </Menu>
                     </Sider>
                     <Layout className="site-layout">
+<<<<<<< HEAD
                         <Header className="site-layout-background" style={{ padding: 0 }} >
                             <Input placeholder="Search . . ." prefix={<SearchOutlined />} />
+=======
+                        <Header className="site-layout-background" style={{ padding: 0 }}>
+                            Salom
+>>>>>>> c671cd601496a19f8ac4cde4ea23d5ead8b0b267
                         </Header>
                         <Content style={{ margin: '0 16px' }}>
                             <BreadCrumbs />
@@ -72,7 +70,7 @@ export class SiderDemo extends React.Component {
                                 <Routes>
                                     {
                                         routes.map((route, i) => (
-                                            <Route path={route.url} key={route + i} element={route.component} />
+                                            <Route path={route.url} key={i} element={route.component} />
                                         ))
                                     }
                                 </Routes>
@@ -81,7 +79,6 @@ export class SiderDemo extends React.Component {
                         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
                     </Layout>
                 </Layout>
-            </Router>
         );
     }
 }
