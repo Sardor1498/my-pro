@@ -24,3 +24,12 @@ export const RegisterFields = [
         required: true,
     },
 ]
+
+export const shaxi = [
+    {
+        name: "name",
+        type: "input",
+        label: "Ismingizni kiriting",
+        required: true,
+    }
+]
