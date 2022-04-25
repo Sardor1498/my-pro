@@ -9,6 +9,8 @@ import Profile from '../pages/Profile'
 import Contact from '../pages/Contact'
 import {Register} from '../pages/Register'
 import Login from '../pages/Login'
+import Home from '../pages/Home'
+import Test from '../pages/Test'
 
 
 export const routes = [
@@ -16,7 +18,7 @@ export const routes = [
         name: 'Home',
         url: '/',
         icon: <HomeOutlined />,
-        component: ''
+        component: <Home/>
     },
     {
         name: 'Profile',
@@ -40,6 +42,12 @@ export const routes = [
         name: 'Login',
         url: '/login',
         icon: <UserOutlined />,
-        component: <Login />
+        component: <Login />,
+    },
+    {
+        name: 'Test',
+        url: '/test',
+        icon: <UserOutlined />,
+        component: <Test />,
     },
 ]

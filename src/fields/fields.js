@@ -24,3 +24,19 @@ export const RegisterFields = [
         required: true,
     },
 ]
+
+
+export const LoginFields = [
+    {
+        name: "username",
+        type: "input",
+        label: "Username",
+        required: true,
+    },
+    {
+        name: "password",
+        type: "password",
+        label: "Password",
+        required: true,
+    },
+]

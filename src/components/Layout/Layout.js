@@ -1,17 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Input, Layout, Menu, Breadcrumb } from 'antd';
-import {
-    DesktopOutlined,
-    PieChartOutlined,
-    FileOutlined,
-    TeamOutlined,
-    UserOutlined,
-    SearchOutlined,
-} from '@ant-design/icons';
-=======
 import { Layout, Menu } from 'antd';
->>>>>>> c671cd601496a19f8ac4cde4ea23d5ead8b0b267
 import './Layout.css'
 import BreadCrumbs from '../BreadCrumbs';
 import { routes } from '../../routes/routes';
@@ -56,13 +44,8 @@ export class AntLayout extends React.Component {
                         </Menu>
                     </Sider>
                     <Layout className="site-layout">
-<<<<<<< HEAD
-                        <Header className="site-layout-background" style={{ padding: 0 }} >
-                            <Input placeholder="Search . . ." prefix={<SearchOutlined />} />
-=======
                         <Header className="site-layout-background" style={{ padding: 0 }}>
                             Salom
->>>>>>> c671cd601496a19f8ac4cde4ea23d5ead8b0b267
                         </Header>
                         <Content style={{ margin: '0 16px' }}>
                             <BreadCrumbs />
