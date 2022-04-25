@@ -25,18 +25,28 @@ export const RegisterFields = [
     },
 ]
 
+export const shaxi = [
+    {
+        name: "name",
+        type: "input",
+        label: "Ismingizni kiriting",
+        required: true,
+    }
+]
 
 export const LoginFields = [
     {
         name: "username",
-        type: "input",
-        label: "Username",
+        type: "name",
+        label: "UserName",
         required: true,
+
     },
     {
         name: "password",
         type: "password",
         label: "Password",
         required: true,
-    },
+
+    }
 ]
