@@ -11,6 +11,7 @@ import {Register} from '../pages/Register'
 import Login from '../pages/Login'
 import Home from '../pages/Home'
 import Test from '../pages/Test'
+import Azizbek from '../pages/Azizbek'
 
 
 export const routes = [
@@ -49,5 +50,11 @@ export const routes = [
         url: '/test',
         icon: <UserOutlined />,
         component: <Test />,
+    },
+    {
+        name: 'Azizbek',
+        url: '/azizbek',
+        icon: <UserOutlined />,
+        component: <Azizbek />,
     },
 ]

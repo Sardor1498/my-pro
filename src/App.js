@@ -3,9 +3,20 @@ import { AntLayout } from './components/Layout/Layout'
 // import 'antd/dist/antd.css';
 
 const App = () => {
+
+  const [hidden, setHidden] = React.useState(false)
+
+  function Click()  {
+    if(hidden === true) {
+      setHidden(false)
+    }else{
+      setHidden(true)
+    }
+  }
+     
   return (
     <div className="App">
-      <AntLayout />
+      <AntLayout Click={Click} hidden={hidden} />
       {/* <DynamicForm /> */}
     </div>
   );

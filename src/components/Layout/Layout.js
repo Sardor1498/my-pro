@@ -4,6 +4,7 @@ import './Layout.css'
 import BreadCrumbs from '../BreadCrumbs';
 import { routes } from '../../routes/routes';
 import { Link, Route, Routes } from 'react-router-dom';
+import ContentMain from './Content' 
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -23,6 +24,7 @@ export class AntLayout extends React.Component {
 
 
     render() {
+        const state = this.props
         const { collapsed } = this.state;
 
         return (
@@ -50,13 +52,14 @@ export class AntLayout extends React.Component {
                         <Content style={{ margin: '0 16px' }}>
                             <BreadCrumbs />
                             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-                                <Routes>
+                                {/* <Routes>
                                     {
                                         routes.map((route, i) => (
                                             <Route path={route.url} key={i} element={route.component} />
                                         ))
                                     }
-                                </Routes>
+                                </Routes> */}
+                                <ContentMain state={state} />
                             </div>
                         </Content>
                         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
