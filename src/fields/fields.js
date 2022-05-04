@@ -33,3 +33,20 @@ export const shaxi = [
         required: true,
     }
 ]
+
+export const LoginFields = [
+    {
+        name: "username",
+        type: "name",
+        label: "UserName",
+        required: true,
+
+    },
+    {
+        name: "password",
+        type: "password",
+        label: "Password",
+        required: true,
+
+    }
+]

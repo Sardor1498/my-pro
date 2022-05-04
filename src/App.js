@@ -13,7 +13,6 @@ const App = () => {
       setHidden(true)
     }
   }
-
   return (
     <div className="App">
       <AntLayout Click={Click} hidden={hidden} />

@@ -17,7 +17,7 @@ export const routes = [
         name: 'Home',
         url: '',
         icon: <HomeOutlined />,
-        component: ''
+        component: <Home/>
     },
     {
         name: 'Profile',
@@ -41,12 +41,26 @@ export const routes = [
         name: 'Login',
         url: 'login',
         icon: <UserOutlined />,
-        component: <Login />
+        component: <Login />,
     },
     {
         name: 'Test',
+<<<<<<< HEAD
         url: 'test',
         icon: <UserOutlined />,
         component: <Test />
     },
 ]
+=======
+        url: '/test',
+        icon: <UserOutlined />,
+        component: <Test />,
+    },
+    {
+        name: 'Azizbek',
+        url: '/azizbek',
+        icon: <UserOutlined />,
+        component: <Azizbek />,
+    },
+]
+>>>>>>> 5cac42d83bb7a1450d4df9fd6ee6fa509b17408f
