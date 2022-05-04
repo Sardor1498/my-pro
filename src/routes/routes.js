@@ -17,7 +17,7 @@ export const routes = [
         name: 'Home',
         url: '',
         icon: <HomeOutlined />,
-        component: <Home/>
+        component: "" 
     },
     {
         name: 'Profile',
