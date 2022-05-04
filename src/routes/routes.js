@@ -45,22 +45,8 @@ export const routes = [
     },
     {
         name: 'Test',
-<<<<<<< HEAD
         url: 'test',
         icon: <UserOutlined />,
         component: <Test />
     },
 ]
-=======
-        url: '/test',
-        icon: <UserOutlined />,
-        component: <Test />,
-    },
-    {
-        name: 'Azizbek',
-        url: '/azizbek',
-        icon: <UserOutlined />,
-        component: <Azizbek />,
-    },
-]
->>>>>>> 5cac42d83bb7a1450d4df9fd6ee6fa509b17408f
