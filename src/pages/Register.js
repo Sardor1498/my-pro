@@ -44,6 +44,7 @@ export function Register(props) {
     const func = (e) => {
         alert ? setAlert(false) : setLessPassword(false);
     }
+    
     return (
         <>
             {
