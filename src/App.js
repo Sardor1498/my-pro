@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { AntLayout } from './components/Layout/Layout'
+import { AntLayout } from './components/Layout/Layout2'
 // import 'antd/dist/antd.css';
 
 const App = () => {

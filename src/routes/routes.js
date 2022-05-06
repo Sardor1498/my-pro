@@ -1,52 +1,74 @@
-import {
-    HomeOutlined,
-    ProfileOutlined,
-    ContactsOutlined,
-    UserOutlined,
-    DesktopOutlined,
-} from '@ant-design/icons';
 import Profile from '../pages/Profile'
-import Contact from '../pages/Contact'
-import {Register} from '../pages/Register'
-import Login from '../pages/Login'
-import Test from '../pages/Test';
-
+import Message from '../pages/Message'
+import Services from '../pages/Services'
+import AddWork from '../pages/AddWork'
+import ClientBase from '../pages/ClientBase'
+import Notifications from '../pages/Notifications'
+import Rates from '../pages/Rates'
+import Record from '../pages/Record'
+import Records from '../pages/Records'
+import Reviews from '../pages/Reviews'
+import { RightOutlined } from '@ant-design/icons'
 
 export const routes = [
     {
-        name: 'Home',
-        url: '',
-        icon: <HomeOutlined />,
-        component: <Home/>
-    },
-    {
         name: 'Profile',
         url: 'profile',
-        icon: <ProfileOutlined />,
-        component: <Profile />
+        component: <Profile />,
+        icon: <RightOutlined />,
     },
     {
-        name: 'Contact',
-        url: 'contact',
-        icon: <ContactsOutlined />,
-        component: <Contact />
+        name: 'Message',
+        url: 'message',
+        component: <Message />,
+        icon: <RightOutlined />,
     },
     {
-        name: 'Register',
-        url: 'register',
-        icon: <DesktopOutlined />,
-        component: <Register />
+        name: 'Services',
+        url: 'services',
+        component: <Services />,
+        icon: <RightOutlined />,
     },
     {
-        name: 'Login',
-        url: 'login',
-        icon: <UserOutlined />,
-        component: <Login />,
+        name: 'Add work schedule',
+        url: 'add work schedule',
+        component: <AddWork />,
+        icon: <RightOutlined />,
     },
     {
-        name: 'Test',
-        url: 'test',
-        icon: <UserOutlined />,
-        component: <Test />
+        name: 'Record a client',
+        url: 'record a client',
+        component: <Record />,
+        icon: <RightOutlined />,
+    },
+    {
+        name: 'Viewing records',
+        url: 'viewing records',
+        component: <Records />,
+        icon: <RightOutlined />,
+    },
+    {
+        name: 'Client base',
+        url: 'client base',
+        component: <ClientBase />,
+        icon: <RightOutlined />,
+    },
+    {
+        name: 'Notifications',
+        url: 'notifications',
+        component: <Notifications />,
+        icon: <RightOutlined />,
+    },
+    {
+        name: 'Rates',
+        url: 'rates',
+        component: <Rates />,
+        icon: <RightOutlined />,
+    },
+    {
+        name: 'Reviews',
+        url: 'reviews',
+        component: <Reviews />,
+        icon: <RightOutlined />,
     },
 ]
