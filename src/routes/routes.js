@@ -12,15 +12,6 @@ import { RightOutlined } from '@ant-design/icons'
 
 export const routes = [
     {
-<<<<<<< HEAD
-=======
-        name: 'Home',
-        url: '',
-        icon: <HomeOutlined />,
-        component: "" 
-    },
-    {
->>>>>>> 56549a673da21e2dc0c0c7ae0e92204e854adc3e
         name: 'Profile',
         url: 'profile',
         component: <Profile />,
@@ -40,25 +31,25 @@ export const routes = [
     },
     {
         name: 'Add work schedule',
-        url: 'add work schedule',
+        url: 'add_work_schedule',
         component: <AddWork />,
         icon: <RightOutlined />,
     },
     {
         name: 'Record a client',
-        url: 'record a client',
+        url: 'record_a_client',
         component: <Record />,
         icon: <RightOutlined />,
     },
     {
         name: 'Viewing records',
-        url: 'viewing records',
+        url: 'viewing_records',
         component: <Records />,
         icon: <RightOutlined />,
     },
     {
         name: 'Client base',
-        url: 'client base',
+        url: 'client_base',
         component: <ClientBase />,
         icon: <RightOutlined />,
     },

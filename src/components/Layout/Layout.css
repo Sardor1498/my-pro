@@ -7,6 +7,6 @@
   .site-layout .site-layout-background {
     background: #fff;
   }
-  .antmenu {
-    color: #fff !important  ;
+  Menu.active {
+    color: #000 !important;
   }
