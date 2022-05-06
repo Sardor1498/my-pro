@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Menu,  Image } from 'antd';
+import { Layout, Menu, Image } from 'antd';
 import './Layout.css'
 import { routes } from '../../routes/routes';
 import { Link } from 'react-router-dom';
@@ -31,21 +31,21 @@ export class AntLayout extends React.Component {
 
         return (
             <Layout style={{ minHeight: '100vh' }}>
-                <Sider style={{backgroundColor:'#092b00',color:'#fff'}} className='text-white' width={300} collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
+                <Sider style={{ backgroundColor: '#092b00' }} className="text-white" width={300} collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
                     <div className="logo flex h-5  px-7 pt-5 pb-10 " ><Image className='rounded-full' width={40} height={40} src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' />
                         <div className=''>
                             <div>abdurahmoniy</div>
                             <div>Base</div>
                         </div>
                     </div>
-                    <Menu  style={{backgroundColor:'transparent', }}   defaultSelectedKeys={['1']} >
+                    <Menu style={{ backgroundColor: 'transparent', color: '#fff' }} defaultSelectedKeys={['1']} >
                         {
                             routes.map((item, i) => {
                                 return (
                                     // <SubMenu key={i + item.name} icon={item.icon} title={item.name}>
-                                        <Menu.Item key={i}  >
-                                            <Link to={item.url}>{item.name}</Link>
-                                        </Menu.Item>
+                                    <Menu.Item key={i}>
+                                            <Link style={{color: '#fff'}} to={item.url}>{item.name}</Link>
+                                    </Menu.Item>
                                     // </SubMenu>
                                 )
                             })
