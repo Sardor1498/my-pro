@@ -12,6 +12,15 @@ import { RightOutlined } from '@ant-design/icons'
 
 export const routes = [
     {
+<<<<<<< HEAD
+=======
+        name: 'Home',
+        url: '',
+        icon: <HomeOutlined />,
+        component: "" 
+    },
+    {
+>>>>>>> 56549a673da21e2dc0c0c7ae0e92204e854adc3e
         name: 'Profile',
         url: 'profile',
         component: <Profile />,
